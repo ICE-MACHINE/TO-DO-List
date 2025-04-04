@@ -1,0 +1,161 @@
+
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #ccc;
+    padding: 20px;
+    margin: 20px;
+    width:80%;
+    border-radius: 20px;
+    position:relative;
+}
+.form{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #ccc;
+    padding: 20px;
+    margin: 20px;
+    width:80%;
+    border-radius: 20px;
+}
+#text{
+    width:70% ;
+    border: none;
+    outline: none;
+    background: transparent;
+    opacity: 0.75;
+    border-bottom: 3px solid #000;
+    font-size: 22px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#text:focus{
+    opacity: 1;
+    border-bottom: 3px solid #0529f7;
+}
+#submit{
+    padding: 10px;
+    border-radius: 10px;
+    background: #ff5e00;
+    font-size: 22px;
+    border: none;
+    cursor:pointer;
+}
+#submit:hover{
+    background: hsla(22, 100%, 50%, 0.75);
+}
+.container{
+    margin-top: 20px;
+}
+.delete-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #ff0000;
+    color: #fff;
+    font-size: 18px;
+    width: 60%;
+    border: none;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    background: #cc0000;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+th {
+    background: #f4f4f4;
+    font-weight: bold;
+}
+tfoot {
+    background: #ddd;
+    font-weight: bold;
+    text-align: center;
+}
+tfoot button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #ff0000;
+    color: #fff;
+    font-size: 16px;
+    width:60%;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+tfoot button:hover {
+    background: #cc0000;
+}
+p{
+    font-size:22px;
+    color:blue;
+    font-weight: bold;
+}
+.empty{
+    display:none !important;
+}
+.message{
+    font-size:18px;
+    color: red;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: 60%;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .content, .container {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .form{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #text {
+        width: 90%;
+        font-size: 18px;
+    }
+    #submit, .delete-btn, tfoot button {
+        width: 80%;
+        font-size: 18px;
+    }
+    table {
+        font-size: 16px;
+    }
+    th, td {
+        padding: 5px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .message {
+        font-size: 16px;
+        width: 90%;
+    }
+}
